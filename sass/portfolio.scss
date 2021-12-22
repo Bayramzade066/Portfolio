@@ -1,4 +1,4 @@
-
+@import "./breakpoint.scss";
 
 
 .portfolio{
@@ -24,7 +24,7 @@
             margin-top: 3% !important;
           }
         @include respond(laptop){
-            width: 100% !important;
+            width: 75% !important;
         }
 
         .portfolio-head{
@@ -39,7 +39,7 @@
             margin-left: 0 !important;
             }
             @include respond(laptop){
-                margin-left: 30% !important;
+                margin-left: 5% !important;
             }
             .portfolio-div{
                 box-sizing: border-box;

@@ -31,6 +31,19 @@
   margin-right: 5rem;
 }
 
+@media only screen and (max-device-width: 1280px) {
+  .portfolio .portfolio-all {
+    margin: 0 auto !important;
+    margin-top: 3% !important;
+  }
+}
+
+@media only screen and (max-device-width: 990px) {
+  .portfolio .portfolio-all {
+    width: 75% !important;
+  }
+}
+
 .portfolio .portfolio-all .portfolio-head {
   width: 100%;
   display: -webkit-box;
@@ -45,6 +58,18 @@
           flex-direction: column;
   margin-bottom: 5rem;
   margin-left: 5rem;
+}
+
+@media only screen and (max-device-width: 1280px) {
+  .portfolio .portfolio-all .portfolio-head {
+    margin-left: 0 !important;
+  }
+}
+
+@media only screen and (max-device-width: 990px) {
+  .portfolio .portfolio-all .portfolio-head {
+    margin-left: 5% !important;
+  }
 }
 
 .portfolio .portfolio-all .portfolio-head .portfolio-div {
@@ -85,6 +110,12 @@
   overflow: hidden;
 }
 
+@media only screen and (max-device-width: 990px) {
+  .portfolio .portfolio-all .portfolio-img {
+    width: 70vw !important;
+  }
+}
+
 .portfolio .portfolio-all .portfolio-img .img {
   background-image: url("../img/7.jpg");
   background-position: center center;
@@ -97,6 +128,12 @@
   transition: .8s ease;
 }
 
+@media only screen and (max-device-width: 990px) {
+  .portfolio .portfolio-all .portfolio-img .img {
+    width: 70vw !important;
+  }
+}
+
 .portfolio .portfolio-all .portfolio-img :hover {
   -webkit-transform: scale(1.03) translateZ(0);
           transform: scale(1.03) translateZ(0);
@@ -106,4 +143,10 @@
 
 .portfolio .portfolio-all .portfolio-img a {
   padding-left: 3rem;
+}
+
+@media only screen and (max-device-width: 1280px) {
+  .portfolio .portfolio-all .portfolio-img a {
+    padding-left: 0 !important;
+  }
 }

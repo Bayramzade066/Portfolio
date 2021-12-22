@@ -1,0 +1,207 @@
+@import "./breakpoint.scss";
+
+.home{
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    .home-all{
+        width:85rem;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin-left: 30%;
+
+
+      @include respond(lgscreen){
+        margin-left: 25vw !important;
+        
+        font-size: 16px;
+      }
+      @include respond(desktop){
+        margin: 0 auto !important;
+        flex-direction: column !important;
+        margin-top: 25% !important;
+      }
+      @include respond(laptop){
+        width: 100% !important;
+    }
+
+
+        
+        .profile-box {
+            height: 300px;
+            width: 300px;
+            margin-top: 30px;
+            position: relative;
+            border-radius: 5px;
+            overflow: hidden;
+            object-fit: cover;
+            transition: 0.3s ease all;
+            box-shadow: 0 5px 40px rgba(129, 129, 129, 0.253);
+
+            @include respond(desktop){
+              width: 34vw !important;
+              height: 34vw !important;
+              margin-bottom: 5% !important;
+              margin-top: 15% !important;
+            }
+            @include respond(laptop){
+              width: 30vw !important;
+              height: 30vw !important;
+              
+          }
+            
+          }
+          
+          .profile-box:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 5px 80px rgba(0, 0, 0, 0.5);
+          }
+          
+          .profile-box img {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            display: block;
+            border-radius: 4px;
+            transition: 1s ease all;
+          }
+          
+          .profile-box:hover img {
+            transform: scale(1.25);
+          }
+          
+          .profile-box .box-content {
+            color: white;
+            position: absolute;
+            width: 100%;
+            bottom: 0;
+            left: 0;
+            z-index: 999;
+            padding: 5px 20px 0px;
+            background: rgba(0, 0, 0, 0.5);
+            transition: 0.7s ease all;
+          }
+          
+          .profile-box:hover .box-content {
+            padding-bottom: 35px;
+            padding-top: 15px;
+            height: 80px;
+          }
+          
+          .profile-box .box-content h3 {
+            margin-bottom: 15px;
+            font-size: 15px;
+            letter-spacing: 1px;
+          }
+          
+          .profile-box .social-links {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+          }
+          
+          .profile-box .social-links li {
+            width: 15px;
+            height: 15px;
+            background: #efefef;
+            display: inline-block;
+            margin-right: 4px;
+            border-radius: 50%;
+            transition: 0.3s ease all;
+            transform: translateY(100px);
+          }
+          
+          .profile-box .social-links li:nth-child(2) {
+            transition-delay: 0.25s;
+          }
+          
+          .profile-box .social-links li:last-child {
+            transition-delay: 0.35s;
+          }
+          
+          .profile-box:hover .social-links li {
+            transform: none;
+          }
+
+
+
+
+
+
+
+        .home-info{
+            width: 50%;
+            height: max-content;
+            display: flex;
+            flex-direction: column;
+            justify-content: left;
+            align-items: left;
+            margin-left: 7rem;
+            @include respond(desktop){
+              width:85.84vw  !important;
+              padding-left: 10rem !important;
+              margin-bottom: 3rem;
+            }
+
+            @include respond(laptop){
+              width:70vw  !important;
+              padding-left: 0 !important;
+              margin: 0 auto !important;
+            }
+            .info-name h3{
+                width: 100%;
+                color: #FFFFFF;
+                font-size: 5rem;
+                letter-spacing: 2px;
+                font-weight: 800;
+                text-transform: uppercase;
+                margin-bottom: 2rem;
+
+                @include respond(laptop){
+                  width: 55.84vw !important;
+                  font-size: 3rem !important;
+                }
+
+            }
+            .info-text{
+                color: #bbb;
+                font-size: 1.5rem;
+                line-height: 3rem;
+                font-weight: 500;
+                font-style: italic;
+                margin-bottom: 2rem;
+            }
+            .info-socials {
+                display: flex;
+                height:3rem ;
+                flex-direction: row;
+                .i{
+                    color: #bbb;
+                    margin-right: 1.5rem;
+                    width: 2rem;
+                    cursor: pointer;
+                    i{
+                    margin-top:.7rem;
+                    font-size: 2rem;
+                    transform:scale(1);
+                    transition: all 0.3s linear;
+                    &:hover{
+                        color: #FFFFFF;
+                        transform:scale(1.2);
+                        transition: all 0.3s linear;
+                    }
+                    }  
+                }
+            }
+        }
+    
+    }
+}

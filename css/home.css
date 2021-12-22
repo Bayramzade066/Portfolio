@@ -1,0 +1,268 @@
+.home {
+  width: 100%;
+  height: 500px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.home .home-all {
+  width: 85rem;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 30%;
+}
+
+@media only screen and (min-device-width: 1350px) {
+  .home .home-all {
+    margin-left: 25vw !important;
+    font-size: 16px;
+  }
+}
+
+@media only screen and (max-device-width: 1280px) {
+  .home .home-all {
+    margin: 0 auto !important;
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: column !important;
+            flex-direction: column !important;
+    margin-top: 25% !important;
+  }
+}
+
+@media only screen and (max-device-width: 990px) {
+  .home .home-all {
+    width: 100% !important;
+  }
+}
+
+.home .home-all .profile-box {
+  height: 300px;
+  width: 300px;
+  margin-top: 30px;
+  position: relative;
+  border-radius: 5px;
+  overflow: hidden;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-transition: 0.3s ease all;
+  transition: 0.3s ease all;
+  -webkit-box-shadow: 0 5px 40px rgba(129, 129, 129, 0.253);
+          box-shadow: 0 5px 40px rgba(129, 129, 129, 0.253);
+}
+
+@media only screen and (max-device-width: 1280px) {
+  .home .home-all .profile-box {
+    width: 34vw !important;
+    height: 34vw !important;
+    margin-bottom: 5% !important;
+    margin-top: 15% !important;
+  }
+}
+
+@media only screen and (max-device-width: 990px) {
+  .home .home-all .profile-box {
+    width: 30vw !important;
+    height: 30vw !important;
+  }
+}
+
+.home .home-all .profile-box:hover {
+  -webkit-transform: translateY(-10px);
+          transform: translateY(-10px);
+  -webkit-box-shadow: 0 5px 80px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 5px 80px rgba(0, 0, 0, 0.5);
+}
+
+.home .home-all .profile-box img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  display: block;
+  border-radius: 4px;
+  -webkit-transition: 1s ease all;
+  transition: 1s ease all;
+}
+
+.home .home-all .profile-box:hover img {
+  -webkit-transform: scale(1.25);
+          transform: scale(1.25);
+}
+
+.home .home-all .profile-box .box-content {
+  color: white;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  z-index: 999;
+  padding: 5px 20px 0px;
+  background: rgba(0, 0, 0, 0.5);
+  -webkit-transition: 0.7s ease all;
+  transition: 0.7s ease all;
+}
+
+.home .home-all .profile-box:hover .box-content {
+  padding-bottom: 35px;
+  padding-top: 15px;
+  height: 80px;
+}
+
+.home .home-all .profile-box .box-content h3 {
+  margin-bottom: 15px;
+  font-size: 15px;
+  letter-spacing: 1px;
+}
+
+.home .home-all .profile-box .social-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.home .home-all .profile-box .social-links li {
+  width: 15px;
+  height: 15px;
+  background: #efefef;
+  display: inline-block;
+  margin-right: 4px;
+  border-radius: 50%;
+  -webkit-transition: 0.3s ease all;
+  transition: 0.3s ease all;
+  -webkit-transform: translateY(100px);
+          transform: translateY(100px);
+}
+
+.home .home-all .profile-box .social-links li:nth-child(2) {
+  -webkit-transition-delay: 0.25s;
+          transition-delay: 0.25s;
+}
+
+.home .home-all .profile-box .social-links li:last-child {
+  -webkit-transition-delay: 0.35s;
+          transition-delay: 0.35s;
+}
+
+.home .home-all .profile-box:hover .social-links li {
+  -webkit-transform: none;
+          transform: none;
+}
+
+.home .home-all .home-info {
+  width: 50%;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  -webkit-box-align: left;
+      -ms-flex-align: left;
+          align-items: left;
+  margin-left: 7rem;
+}
+
+@media only screen and (max-device-width: 1280px) {
+  .home .home-all .home-info {
+    width: 85.84vw  !important;
+    padding-left: 10rem !important;
+    margin-bottom: 3rem;
+  }
+}
+
+@media only screen and (max-device-width: 990px) {
+  .home .home-all .home-info {
+    width: 70vw  !important;
+    padding-left: 0 !important;
+    margin: 0 auto !important;
+  }
+}
+
+.home .home-all .home-info .info-name h3 {
+  width: 100%;
+  color: #FFFFFF;
+  font-size: 5rem;
+  letter-spacing: 2px;
+  font-weight: 800;
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+}
+
+@media only screen and (max-device-width: 990px) {
+  .home .home-all .home-info .info-name h3 {
+    width: 55.84vw !important;
+    font-size: 3rem !important;
+  }
+}
+
+.home .home-all .home-info .info-text {
+  color: #bbb;
+  font-size: 1.5rem;
+  line-height: 3rem;
+  font-weight: 500;
+  font-style: italic;
+  margin-bottom: 2rem;
+}
+
+.home .home-all .home-info .info-socials {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 3rem;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.home .home-all .home-info .info-socials .i {
+  color: #bbb;
+  margin-right: 1.5rem;
+  width: 2rem;
+  cursor: pointer;
+}
+
+.home .home-all .home-info .info-socials .i i {
+  margin-top: .7rem;
+  font-size: 2rem;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+
+.home .home-all .home-info .info-socials .i i:hover {
+  color: #FFFFFF;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}

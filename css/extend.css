@@ -923,7 +923,7 @@
 
 @media only screen and (max-device-width: 990px) {
   .contact .contact-all .contact-head {
-    margin-left: 15% !important;
+    padding-left: 8% !important;
   }
 }
 
@@ -1099,7 +1099,7 @@
 
 @media only screen and (max-device-width: 990px) {
   .contact .contact-all .contact-button {
-    margin-right: 20% !important;
+    margin-right: 30% !important;
   }
 }
 

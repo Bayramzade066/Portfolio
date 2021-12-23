@@ -45,14 +45,14 @@
             box-shadow: 0 5px 40px rgba(129, 129, 129, 0.253);
 
             @include respond(desktop){
-              width: 38vw !important;
-              height: 38vw !important;
+              width: 34vw !important;
+              height: 34vw !important;
               margin-bottom: 5% !important;
               margin-top: 15% !important;
             }
             @include respond(laptop){
-              width: 30vw !important;
-              height: 30vw !important;
+              width: 34vw !important;
+              height: 34vw !important;
               
           }
             

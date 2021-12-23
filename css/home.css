@@ -72,8 +72,8 @@
 
 @media only screen and (max-device-width: 1280px) {
   .home .home-all .profile-box {
-    width: 38vw !important;
-    height: 38vw !important;
+    width: 34vw !important;
+    height: 34vw !important;
     margin-bottom: 5% !important;
     margin-top: 15% !important;
   }
@@ -81,8 +81,8 @@
 
 @media only screen and (max-device-width: 990px) {
   .home .home-all .profile-box {
-    width: 30vw !important;
-    height: 30vw !important;
+    width: 34vw !important;
+    height: 34vw !important;
   }
 }
 

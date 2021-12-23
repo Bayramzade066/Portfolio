@@ -45,8 +45,8 @@
             box-shadow: 0 5px 40px rgba(129, 129, 129, 0.253);
 
             @include respond(desktop){
-              width: 34vw !important;
-              height: 34vw !important;
+              width: 36vw !important;
+              height: 36vw !important;
               margin-bottom: 5% !important;
               margin-top: 15% !important;
             }
@@ -192,7 +192,7 @@
 
                 @include respond(laptop){
                   width: 55.84vw !important;
-                  font-size: 3rem !important;
+                  font-size: 4rem !important;
                 }
 
             }

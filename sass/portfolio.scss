@@ -76,9 +76,12 @@
             background-repeat: no-repeat;
             background-size: cover;
             width: 39rem;
+            background-color: #fff;
             height: 41.5rem;
             margin-bottom: 5rem;
             transition: .8s ease;
+            box-shadow: 5px 5px 10px #252525;
+            overflow: hidden;
 
             @include respond(laptop){
                 width: 70vw !important;

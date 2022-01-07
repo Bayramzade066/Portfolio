@@ -1,3 +1,4 @@
+@import "./breakpoint.scss";
 
 
 a{
@@ -136,6 +137,7 @@ a{
                 transform: scale(1.1) translateZ(0);
                 transition: 0.8s all;
                 box-sizing: border-box;
+                cursor: default;
             }
                 
             

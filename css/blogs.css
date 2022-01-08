@@ -127,6 +127,7 @@ a {
   text-align: left;
   width: 100%;
   height: 20.1rem;
+  cursor: default;
   background-color: #000;
   padding: 2.5rem 4rem 2rem;
 }
@@ -185,13 +186,7 @@ a {
   position: relative;
 }
 
-.blogs .blogs-all .cards .card :hover > .text-3 {
-  opacity: 1;
-  -webkit-transition: 1s;
-  transition: 1s;
-}
-
-.blogs .blogs-all .cards :hover > .card-img {
+.blogs .blogs-all .cards .card:hover > .card-img {
   -webkit-transform: scale(1.1) translateZ(0);
           transform: scale(1.1) translateZ(0);
   -webkit-transition: 0.8s all;
@@ -199,6 +194,32 @@ a {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   cursor: default;
+}
+
+.blogs .blogs-all .cards :hover > .card-text > .text-3 {
+  opacity: 1;
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
+  -webkit-animation: mymove 1s;
+          animation: mymove 1s;
+}
+
+@-webkit-keyframes mymove {
+  from {
+    left: -40px;
+  }
+  to {
+    left: 0px;
+  }
+}
+
+@keyframes mymove {
+  from {
+    left: -40px;
+  }
+  to {
+    left: 0px;
+  }
 }
 
 .blogs .blogs-all .blogs-head {

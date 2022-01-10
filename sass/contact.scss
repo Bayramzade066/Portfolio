@@ -71,7 +71,7 @@
                 width:83rem ;
                 height: 4.4rem;
                 padding: 1rem 1.5rem;
-                border: 1px solid hsla(0,0%,100%,.2);
+                border: 1px solid rgba(255, 255, 255, 0.349);
                 margin-bottom: 3rem;
 
                 @include respond(laptop){
@@ -79,7 +79,7 @@
                 }
 
                 &::placeholder{
-                color: #fff;
+                color: rgba(255, 255, 255, 0.623);
                 font-style: italic;
                 font-size: 1.4rem;
                 font-weight: 500;
@@ -103,7 +103,7 @@
                 height: 12rem;
                 padding: 1rem;
                 padding-bottom: 8rem;
-                border: 1px solid hsla(0,0%,100%,.2);
+                border: 1px solid rgba(255, 255, 255, 0.349);
                 margin-bottom: 3rem;
 
                 @include respond(laptop){
@@ -111,7 +111,7 @@
                 }
 
                 &::placeholder{
-                color: #fff;
+                color: rgba(255, 255, 255, 0.623);
                 font-style: italic;
                 font-size: 1.4rem;
                 font-weight: 500;

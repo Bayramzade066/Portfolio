@@ -116,7 +116,7 @@
   width: 83rem;
   height: 4.4rem;
   padding: 1rem 1.5rem;
-  border: 1px solid rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.349);
   margin-bottom: 3rem;
 }
 
@@ -127,7 +127,7 @@
 }
 
 .contact .contact-all .contact-inputs input::-webkit-input-placeholder {
-  color: #fff;
+  color: rgba(255, 255, 255, 0.623);
   font-style: italic;
   font-size: 1.4rem;
   font-weight: 500;
@@ -136,7 +136,7 @@
 }
 
 .contact .contact-all .contact-inputs input:-ms-input-placeholder {
-  color: #fff;
+  color: rgba(255, 255, 255, 0.623);
   font-style: italic;
   font-size: 1.4rem;
   font-weight: 500;
@@ -145,7 +145,7 @@
 }
 
 .contact .contact-all .contact-inputs input::-ms-input-placeholder {
-  color: #fff;
+  color: rgba(255, 255, 255, 0.623);
   font-style: italic;
   font-size: 1.4rem;
   font-weight: 500;
@@ -154,7 +154,7 @@
 }
 
 .contact .contact-all .contact-inputs input::placeholder {
-  color: #fff;
+  color: rgba(255, 255, 255, 0.623);
   font-style: italic;
   font-size: 1.4rem;
   font-weight: 500;
@@ -182,7 +182,7 @@
   height: 12rem;
   padding: 1rem;
   padding-bottom: 8rem;
-  border: 1px solid rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.349);
   margin-bottom: 3rem;
 }
 
@@ -193,7 +193,7 @@
 }
 
 .contact .contact-all .contact-textbox input::-webkit-input-placeholder {
-  color: #fff;
+  color: rgba(255, 255, 255, 0.623);
   font-style: italic;
   font-size: 1.4rem;
   font-weight: 500;
@@ -202,7 +202,7 @@
 }
 
 .contact .contact-all .contact-textbox input:-ms-input-placeholder {
-  color: #fff;
+  color: rgba(255, 255, 255, 0.623);
   font-style: italic;
   font-size: 1.4rem;
   font-weight: 500;
@@ -211,7 +211,7 @@
 }
 
 .contact .contact-all .contact-textbox input::-ms-input-placeholder {
-  color: #fff;
+  color: rgba(255, 255, 255, 0.623);
   font-style: italic;
   font-size: 1.4rem;
   font-weight: 500;
@@ -220,7 +220,7 @@
 }
 
 .contact .contact-all .contact-textbox input::placeholder {
-  color: #fff;
+  color: rgba(255, 255, 255, 0.623);
   font-style: italic;
   font-size: 1.4rem;
   font-weight: 500;

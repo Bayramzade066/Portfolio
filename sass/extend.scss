@@ -108,13 +108,13 @@ body{
                 letter-spacing: 1.5px;
                 font-size: 1.6rem;
                 line-height: 3rem;
-                transition: all 0.5s;
+                transition: all 0.8s ease;
                 text-decoration: none;
                 color: #fff;
                 outline: none;
                 &:hover{
                     letter-spacing: 2.5px;
-                    transition: all 0.5s;
+                    transition: all 0.8s ease;
                 }
             }
 

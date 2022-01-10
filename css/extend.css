@@ -756,21 +756,22 @@ a {
   font-size: 1.3rem;
   padding-bottom: 0.5rem;
   margin-bottom: 2rem;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
+  -webkit-transition: 0.8s;
+  transition: 0.8s;
 }
 
 .blogs .blogs-all .cards .card .card-text .text-1 span {
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
+  -webkit-transition: 0.8s;
+  transition: 0.8s;
 }
 
 .blogs .blogs-all .cards .card .card-text .text-1 :hover {
   color: #fff;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
+  -webkit-transition: 0.8s;
+  transition: 0.8s;
   cursor: pointer;
-  letter-spacing: 0.1rem;
+  letter-spacing: 0.2rem;
+  font-size: 1.31rem;
 }
 
 .blogs .blogs-all .cards .card .card-text .text-2 {
@@ -1389,8 +1390,8 @@ body {
   letter-spacing: 1.5px;
   font-size: 1.6rem;
   line-height: 3rem;
-  -webkit-transition: all 0.5s;
-  transition: all 0.5s;
+  -webkit-transition: all 0.8s ease;
+  transition: all 0.8s ease;
   text-decoration: none;
   color: #fff;
   outline: none;
@@ -1398,8 +1399,8 @@ body {
 
 .header .nav-bar .copyright a:hover {
   letter-spacing: 2.5px;
-  -webkit-transition: all 0.5s;
-  transition: all 0.5s;
+  -webkit-transition: all 0.8s ease;
+  transition: all 0.8s ease;
 }
 
 .menu-li {

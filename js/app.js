@@ -30,4 +30,18 @@ for(let i =0;i<nav__menu.length;i++){
 }
 
 
+// Just for testing
+let preloader = document.querySelector(".preloader")
+
+    setInterval(function(){ 
+  
+      preloader.classList.toggle("loaded");
+      preloader.style.transition="2.9s"
+      preloader.style.opacity="0"
+      
+      }, 2000);
+    setInterval(function() {
+        preloader.style.display="none"
+    }, 3000);
+    
 

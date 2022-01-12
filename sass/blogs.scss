@@ -92,14 +92,14 @@ a{
                         transition: 0.8s;
                         span{
                             transition: 0.8s;
+                            color: #c55923;
                             
                         }:hover{
                             
-                                color: #fff;
                                 transition: 0.8s;
                                 cursor: pointer;
                                 letter-spacing: 0.2rem;
-                                font-size: 1.31rem;
+                                font-size: 1.3rem;
                             
                         }
                         
@@ -116,7 +116,7 @@ a{
                     }
                     .text-3{
                         
-                        color: #fff;
+                        color: #c55923;
                         font-size: 1.2rem;
                         font-weight: 500;
                         text-transform: uppercase;
@@ -136,7 +136,8 @@ a{
                     transition: 0.8s all;
                     box-sizing: border-box;
                     cursor: default;
-                }    
+                }
+                  
                     
             }:hover > .card-text > .text-3{
                 opacity: 1;

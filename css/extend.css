@@ -285,6 +285,7 @@
           transform: scale(1.2);
   -webkit-transition: all 0.3s linear;
   transition: all 0.3s linear;
+  color: #c55923;
 }
 
 .about {
@@ -400,6 +401,10 @@
   color: #ffffff;
 }
 
+.about .about-all .about-info .about-text1 h3 span {
+  color: #c55923;
+}
+
 .about .about-all .about-info .about-text1 p {
   font-size: 1.5rem;
   line-height: 3rem;
@@ -445,7 +450,7 @@
 
 .about .about-all .about-info .about-text2 .about-data span {
   display: inline-block;
-  color: #ffffff;
+  color: #c55923;
   font-size: 1.5rem;
   text-align: left;
   min-width: 9rem;
@@ -763,15 +768,15 @@ a {
 .blogs .blogs-all .cards .card .card-text .text-1 span {
   -webkit-transition: 0.8s;
   transition: 0.8s;
+  color: #c55923;
 }
 
 .blogs .blogs-all .cards .card .card-text .text-1 :hover {
-  color: #fff;
   -webkit-transition: 0.8s;
   transition: 0.8s;
   cursor: pointer;
   letter-spacing: 0.2rem;
-  font-size: 1.31rem;
+  font-size: 1.3rem;
 }
 
 .blogs .blogs-all .cards .card .card-text .text-2 {
@@ -785,7 +790,7 @@ a {
 }
 
 .blogs .blogs-all .cards .card .card-text .text-3 {
-  color: #fff;
+  color: #c55923;
   font-size: 1.2rem;
   font-weight: 500;
   text-transform: uppercase;
@@ -1004,6 +1009,8 @@ a {
   padding: 1rem 1.5rem;
   border: 1px solid rgba(255, 255, 255, 0.349);
   margin-bottom: 3rem;
+  -webkit-transition: outline-color 0.7s ease;
+  transition: outline-color 0.7s ease;
 }
 
 @media only screen and (max-device-width: 990px) {
@@ -1013,7 +1020,8 @@ a {
 }
 
 .contact .contact-all .contact-inputs input::-webkit-input-placeholder {
-  color: rgba(255, 255, 255, 0.623);
+  opacity: 0.5;
+  color: #c55923;
   font-style: italic;
   font-size: 1.4rem;
   font-weight: 500;
@@ -1022,7 +1030,8 @@ a {
 }
 
 .contact .contact-all .contact-inputs input:-ms-input-placeholder {
-  color: rgba(255, 255, 255, 0.623);
+  opacity: 0.5;
+  color: #c55923;
   font-style: italic;
   font-size: 1.4rem;
   font-weight: 500;
@@ -1031,7 +1040,8 @@ a {
 }
 
 .contact .contact-all .contact-inputs input::-ms-input-placeholder {
-  color: rgba(255, 255, 255, 0.623);
+  opacity: 0.5;
+  color: #c55923;
   font-style: italic;
   font-size: 1.4rem;
   font-weight: 500;
@@ -1040,12 +1050,19 @@ a {
 }
 
 .contact .contact-all .contact-inputs input::placeholder {
-  color: rgba(255, 255, 255, 0.623);
+  opacity: 0.5;
+  color: #c55923;
   font-style: italic;
   font-size: 1.4rem;
   font-weight: 500;
   letter-spacing: 0.2rem;
   line-height: 1.6rem;
+}
+
+.contact .contact-all .contact-inputs :focus {
+  outline: solid;
+  outline-width: 1px;
+  outline-color: #c55923;
 }
 
 .contact .contact-all .contact-textbox {
@@ -1070,6 +1087,8 @@ a {
   padding-bottom: 8rem;
   border: 1px solid rgba(255, 255, 255, 0.349);
   margin-bottom: 3rem;
+  -webkit-transition: outline-color 0.5s ease-out;
+  transition: outline-color 0.5s ease-out;
 }
 
 @media only screen and (max-device-width: 990px) {
@@ -1079,7 +1098,8 @@ a {
 }
 
 .contact .contact-all .contact-textbox input::-webkit-input-placeholder {
-  color: rgba(255, 255, 255, 0.623);
+  color: #c55923;
+  opacity: 0.5;
   font-style: italic;
   font-size: 1.4rem;
   font-weight: 500;
@@ -1088,7 +1108,8 @@ a {
 }
 
 .contact .contact-all .contact-textbox input:-ms-input-placeholder {
-  color: rgba(255, 255, 255, 0.623);
+  color: #c55923;
+  opacity: 0.5;
   font-style: italic;
   font-size: 1.4rem;
   font-weight: 500;
@@ -1097,7 +1118,8 @@ a {
 }
 
 .contact .contact-all .contact-textbox input::-ms-input-placeholder {
-  color: rgba(255, 255, 255, 0.623);
+  color: #c55923;
+  opacity: 0.5;
   font-style: italic;
   font-size: 1.4rem;
   font-weight: 500;
@@ -1106,12 +1128,19 @@ a {
 }
 
 .contact .contact-all .contact-textbox input::placeholder {
-  color: rgba(255, 255, 255, 0.623);
+  color: #c55923;
+  opacity: 0.5;
   font-style: italic;
   font-size: 1.4rem;
   font-weight: 500;
   letter-spacing: 0.2rem;
   line-height: 1.6rem;
+}
+
+.contact .contact-all .contact-textbox :focus {
+  outline: solid;
+  outline-width: 1px;
+  outline-color: #c55923;
 }
 
 .contact .contact-all .contact-button {
@@ -1133,14 +1162,14 @@ a {
 }
 
 .contact .contact-all .contact-button .contact-btn {
-  color: black;
+  color: #292727;
   background-color: #fff;
   font-size: 1.5rem;
   padding: 1.5rem 2.5rem;
   margin-right: 9rem;
   border: none;
   cursor: pointer;
-  font-weight: 500;
+  font-weight: 700;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
   border-radius: 0.2rem;
@@ -1293,6 +1322,18 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+@media only screen and (max-device-width: 1280px) {
+  .preloader {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 
 .preloader-mask {
@@ -1525,6 +1566,7 @@ body {
   letter-spacing: 2.5px;
   -webkit-transition: all 0.8s ease;
   transition: all 0.8s ease;
+  color: #c55923;
 }
 
 .menu-li {
@@ -1549,6 +1591,8 @@ body {
   color: #bbb;
   margin-right: .7rem;
   width: 2rem;
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
 }
 
 @media only screen and (max-device-width: 1280px) {
@@ -1558,8 +1602,11 @@ body {
 }
 
 .menu-li .i i {
+  color: #c55923;
   margin-top: .7rem;
   font-size: 1.4rem;
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
 }
 
 @media only screen and (max-device-width: 1280px) {
@@ -1574,8 +1621,8 @@ body {
   line-height: 3rem;
   font-weight: 500;
   color: #bbb;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
 }
 
 @media only screen and (max-device-width: 1280px) {
@@ -1585,10 +1632,10 @@ body {
 }
 
 .menu-li p:hover {
-  color: #fff;
   letter-spacing: 3.8px;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
+  color: #c55923;
 }
 
 .section__anima {

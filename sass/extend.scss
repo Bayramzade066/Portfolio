@@ -43,6 +43,11 @@ body{
     opacity: 1;
     justify-content: center;
     align-items: center;
+
+    @include respond(desktop){
+      display: flex;
+      flex-direction: column;
+    }
     
     &-mask {
       overflow: hidden;
@@ -197,6 +202,7 @@ body{
                 &:hover{
                     letter-spacing: 2.5px;
                     transition: all 0.8s ease;
+                    color: #c55923;
                 }
             }
 
@@ -217,13 +223,16 @@ body{
         color: #bbb;
         margin-right: .7rem;
         width: 2rem;
+        transition: 0.6s;
 
         @include respond(desktop){
             margin-right: 1.2rem !important;
         }
         i{
-            margin-top:.7rem;
+          color:  #c55923;
+        margin-top:.7rem;
         font-size: 1.4rem;
+        transition: 0.6s;
 
         @include respond(desktop){
             font-size: 1.6rem !important;
@@ -236,19 +245,23 @@ body{
         line-height: 3rem;
         font-weight: 500;
         color: #bbb;
-        transition: 0.5s;
+        transition: 0.6s;
 
         @include respond(desktop){
             display: none !important;
         }
 
         &:hover{
-            color: #fff;
+          
             letter-spacing: 3.8px;
-            transition: 0.5s;
+            transition: 0.6s;
+            color:  #c55923;
+            
         }
     }
+    
 }
+
 
 // nav bar end
 

@@ -118,6 +118,8 @@
   padding: 1rem 1.5rem;
   border: 1px solid rgba(255, 255, 255, 0.349);
   margin-bottom: 3rem;
+  -webkit-transition: outline-color 0.7s ease;
+  transition: outline-color 0.7s ease;
 }
 
 @media only screen and (max-device-width: 990px) {
@@ -127,7 +129,8 @@
 }
 
 .contact .contact-all .contact-inputs input::-webkit-input-placeholder {
-  color: rgba(255, 255, 255, 0.623);
+  opacity: 0.5;
+  color: #c55923;
   font-style: italic;
   font-size: 1.4rem;
   font-weight: 500;
@@ -136,7 +139,8 @@
 }
 
 .contact .contact-all .contact-inputs input:-ms-input-placeholder {
-  color: rgba(255, 255, 255, 0.623);
+  opacity: 0.5;
+  color: #c55923;
   font-style: italic;
   font-size: 1.4rem;
   font-weight: 500;
@@ -145,7 +149,8 @@
 }
 
 .contact .contact-all .contact-inputs input::-ms-input-placeholder {
-  color: rgba(255, 255, 255, 0.623);
+  opacity: 0.5;
+  color: #c55923;
   font-style: italic;
   font-size: 1.4rem;
   font-weight: 500;
@@ -154,12 +159,19 @@
 }
 
 .contact .contact-all .contact-inputs input::placeholder {
-  color: rgba(255, 255, 255, 0.623);
+  opacity: 0.5;
+  color: #c55923;
   font-style: italic;
   font-size: 1.4rem;
   font-weight: 500;
   letter-spacing: 0.2rem;
   line-height: 1.6rem;
+}
+
+.contact .contact-all .contact-inputs :focus {
+  outline: solid;
+  outline-width: 1px;
+  outline-color: #c55923;
 }
 
 .contact .contact-all .contact-textbox {
@@ -184,6 +196,8 @@
   padding-bottom: 8rem;
   border: 1px solid rgba(255, 255, 255, 0.349);
   margin-bottom: 3rem;
+  -webkit-transition: outline-color 0.5s ease-out;
+  transition: outline-color 0.5s ease-out;
 }
 
 @media only screen and (max-device-width: 990px) {
@@ -193,7 +207,8 @@
 }
 
 .contact .contact-all .contact-textbox input::-webkit-input-placeholder {
-  color: rgba(255, 255, 255, 0.623);
+  color: #c55923;
+  opacity: 0.5;
   font-style: italic;
   font-size: 1.4rem;
   font-weight: 500;
@@ -202,7 +217,8 @@
 }
 
 .contact .contact-all .contact-textbox input:-ms-input-placeholder {
-  color: rgba(255, 255, 255, 0.623);
+  color: #c55923;
+  opacity: 0.5;
   font-style: italic;
   font-size: 1.4rem;
   font-weight: 500;
@@ -211,7 +227,8 @@
 }
 
 .contact .contact-all .contact-textbox input::-ms-input-placeholder {
-  color: rgba(255, 255, 255, 0.623);
+  color: #c55923;
+  opacity: 0.5;
   font-style: italic;
   font-size: 1.4rem;
   font-weight: 500;
@@ -220,12 +237,19 @@
 }
 
 .contact .contact-all .contact-textbox input::placeholder {
-  color: rgba(255, 255, 255, 0.623);
+  color: #c55923;
+  opacity: 0.5;
   font-style: italic;
   font-size: 1.4rem;
   font-weight: 500;
   letter-spacing: 0.2rem;
   line-height: 1.6rem;
+}
+
+.contact .contact-all .contact-textbox :focus {
+  outline: solid;
+  outline-width: 1px;
+  outline-color: #c55923;
 }
 
 .contact .contact-all .contact-button {
@@ -247,14 +271,14 @@
 }
 
 .contact .contact-all .contact-button .contact-btn {
-  color: black;
+  color: #292727;
   background-color: #fff;
   font-size: 1.5rem;
   padding: 1.5rem 2.5rem;
   margin-right: 9rem;
   border: none;
   cursor: pointer;
-  font-weight: 500;
+  font-weight: 700;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
   border-radius: 0.2rem;

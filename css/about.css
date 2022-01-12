@@ -111,6 +111,10 @@
   color: #ffffff;
 }
 
+.about .about-all .about-info .about-text1 h3 span {
+  color: #c55923;
+}
+
 .about .about-all .about-info .about-text1 p {
   font-size: 1.5rem;
   line-height: 3rem;
@@ -156,7 +160,7 @@
 
 .about .about-all .about-info .about-text2 .about-data span {
   display: inline-block;
-  color: #ffffff;
+  color: #c55923;
   font-size: 1.5rem;
   text-align: left;
   min-width: 9rem;

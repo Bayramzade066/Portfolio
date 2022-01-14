@@ -288,6 +288,214 @@
   color: #c55923;
 }
 
+.home .player {
+  background-color: #D52F31;
+  width: 330px;
+  height: 190px;
+  border-radius: 8px;
+  -webkit-box-shadow: 0 8px 0 0 #be272a;
+          box-shadow: 0 8px 0 0 #be272a;
+  position: relative;
+  z-index: 9999999;
+  left: 50%;
+  top: 70%;
+  display: block;
+}
+
+.home .record {
+  height: 175px;
+  width: 175px;
+  background-color: #181312;
+  border-radius: 50%;
+  position: absolute;
+  top: 10px;
+  left: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.home .record:before {
+  content: "";
+  position: absolute;
+  height: 135px;
+  width: 135px;
+  border: 5px solid transparent;
+  border-top: 5px solid #2C2424;
+  border-bottom: 5px solid #2C2424;
+  border-radius: 50%;
+}
+
+.home .record:after {
+  content: "";
+  position: absolute;
+  height: 95px;
+  width: 95px;
+  border: 5px solid transparent;
+  border-top: 5px solid #2C2424;
+  border-bottom: 5px solid #2C2424;
+  border-radius: 50%;
+}
+
+.home .label {
+  background-color: #181312;
+  height: 15px;
+  width: 15px;
+  border: 20px solid #FF8E00;
+  border-radius: 50%;
+}
+
+.home .screw {
+  background-color: #181312;
+  height: 17px;
+  width: 17px;
+  border: 10px solid #2c2c2c;
+  border-radius: 50%;
+  position: absolute;
+  top: -16px;
+  left: -16px;
+}
+
+.home .stick {
+  height: 90px;
+  width: 6px;
+  background-color: #ffffff;
+  position: absolute;
+  top: 25px;
+  right: 95px;
+  -webkit-transition: 1s;
+  transition: 1s;
+  -webkit-transform-origin: top;
+          transform-origin: top;
+}
+
+.home .play {
+  -webkit-transform: rotate(30deg);
+          transform: rotate(30deg);
+  -webkit-transform-origin: top;
+          transform-origin: top;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.home .stick:before {
+  content: "";
+  height: 40px;
+  width: 6px;
+  background-color: #ffffff;
+  position: absolute;
+  -webkit-transform: rotate(30deg);
+          transform: rotate(30deg);
+  bottom: -36px;
+  right: 10px;
+}
+
+.home .stick:after {
+  content: "";
+  position: absolute;
+  height: 0;
+  width: 10px;
+  border-top: 18px solid #B2AEA6;
+  border-left: 2px solid transparent;
+  border-right: 2px solid transparent;
+  -webkit-transform: rotate(30deg);
+          transform: rotate(30deg);
+  top: 108px;
+  right: 12.5px;
+}
+
+.home .power {
+  height: 28px;
+  width: 28px;
+  background-color: #ED5650;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 20px;
+  right: 30px;
+  border: none;
+  border: 3.5px solid #be272a;
+  -webkit-animation-play-state: paused;
+          animation-play-state: paused;
+  outline: none;
+}
+
+.home .on {
+  -webkit-animation: rotate 3s 1s linear infinite;
+          animation: rotate 3s 1s linear infinite;
+}
+
+@-webkit-keyframes rotate {
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes rotate {
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+.home .slider {
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+  width: 90px;
+  height: 7px;
+  -webkit-appearance: none;
+  background-color: #be272a;
+  border: 6px solid #ED5650;
+  border-radius: 3px;
+  outline: none;
+  position: absolute;
+  left: 233px;
+  top: 60px;
+}
+
+.home .slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  background-color: white;
+  width: 10px;
+  height: 12px;
+  cursor: pointer;
+}
+
+.home .loader {
+  height: 100vh;
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #181312;
+  font-family: 'Rubik',sans-serif;
+  font-size: 22px;
+}
+
+.home a {
+  color: #181312;
+  font-size: 25px;
+  font-family: "Rubik",sans-serif;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  padding: 8px 12px 8px 12px;
+  border: 2px solid #181312;
+  text-decoration: none;
+}
+
 .about {
   width: 100%;
   display: none;
@@ -1639,8 +1847,8 @@ body {
 }
 
 .section__anima {
-  -webkit-animation: sectionanima 0.5s linear;
-          animation: sectionanima 0.5s linear;
+  -webkit-animation: sectionanima 0.65s linear;
+          animation: sectionanima 0.65s linear;
 }
 
 @-webkit-keyframes sectionanima {

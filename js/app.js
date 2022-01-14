@@ -8,17 +8,18 @@ document.querySelector(".blogs"),
 
  let nav__menu = document.querySelectorAll(".menu-li")
  
-
+// section change
 for(let i =0;i<nav__menu.length;i++){
         nav__menu[i].addEventListener("click",()=>{
+            arr[i].style.opacity="1"
         arr[i].style.display="flex";
         arr[i].classList.add("section__anima")
-        console.log(arr[i].style.display)
+        // console.log(arr[i].style.display)
         for(let x = 0; x<arr.length;x++){
             if(x==i)
                 continue
             
-         
+             arr[x].style.opacity="0"
              arr[x].style.display = "none";
             arr[x].classList.remove("section__anima")
             }
@@ -30,7 +31,7 @@ for(let i =0;i<nav__menu.length;i++){
 }
 
 
-// Just for testing
+// preloader
 let preloader = document.querySelector(".preloader")
 
     setInterval(function(){ 
@@ -44,4 +45,6 @@ let preloader = document.querySelector(".preloader")
         preloader.style.display="none"
     }, 3000);
     
+// music
+
 

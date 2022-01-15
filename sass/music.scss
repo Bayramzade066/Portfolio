@@ -1,4 +1,4 @@
-
+@import './breakpoint.scss';
 // music
 
 
@@ -7,13 +7,19 @@
     background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     
-      width: 330px;
-      height: 190px;
+      width: 31rem;
+      height: 19rem;
       border-radius: 8px;
       box-shadow: 0 8px 0 0 rgba(0, 0, 0, 0.555) ;
       position: relative;
-      right: 1.7%;
+      right: 1.9%;
       display: block;
+
+      @include respond(laptop){
+        width: 20rem;
+        height: 12rem;
+      }
+
     }
     .record{
       height: 175px;
@@ -26,6 +32,11 @@
       display: flex;
       align-items: center;
       justify-content: center;
+
+      @include respond(laptop){
+        width: 85px !important;
+        height: 85px !important;
+      }
     }
     .record:before{
       content: "";
@@ -36,6 +47,11 @@
       border-top:5px solid #2C2424;
       border-bottom:5px solid #2C2424;
       border-radius: 50%;
+
+      @include respond(laptop){
+        width: 40px !important;
+        height: 40px !important;
+      }
     }
     .record:after{
       content: "";
@@ -46,6 +62,11 @@
       border-top:5px solid #2C2424;
       border-bottom:5px solid #2C2424;
       border-radius: 50%;
+
+      @include respond(laptop){
+        height: 40px !important;
+        width: 40px !important;
+      }
     }
     .label{
       background-color: #000000;
@@ -53,6 +74,12 @@
       width: 15px;
       border:10px solid #2C2424;
       border-radius: 50%;
+
+      @include respond(laptop){
+        width: 5px !important;
+        height: 5px !important;
+        border: 3px solid #2C2424;
+      }
     }
     .screw{
       background-color: #000;
@@ -63,6 +90,14 @@
       position: absolute;
       top:-10px;
       left: -10px;
+
+      @include respond(laptop){
+        width: 10px !important;
+        height: 10px !important;
+        position: absolute !important;
+        top: -20px !important;
+        left: 10px !important;
+      }
     }
     .stick{
       height: 90px;
@@ -73,11 +108,18 @@
       right: 95px;
       transition: 1s;
       transform-origin: top; 
+
+      @include respond(laptop){
+        display: none;
+      }
     }
     .play{
       transform:rotate(30deg);
       transform-origin: top; 
       transition: 1s;
+      @include respond(laptop){
+        display: none;
+      }
     }
     .stick:before{
       content: "";
@@ -88,6 +130,8 @@
       transform: rotate(30deg);
       bottom:-36px;
       right: 10px;
+
+      
     }
     .stick:after{
       content: "";
@@ -100,6 +144,8 @@
       transform: rotate(30deg);
       top:108px;
       right: 12.5px;
+
+      @include respond(laptop)
     }
     .power{
       height: 28px;
@@ -116,6 +162,8 @@
       animation-play-state: paused;
       outline: none;
       cursor:pointer;
+
+      
     }
     .on{
       animation: rotate 3s 1s linear infinite;
@@ -137,6 +185,12 @@
       position: absolute;
       left: 233px;
       top:60px;
+
+      @include respond(laptop){
+        width: 50px !important;
+        left: 103px;
+        top: 30px;
+      }
     }
     .slider::-webkit-slider-thumb{
       -webkit-appearance:none;
@@ -154,5 +208,7 @@
       color: #181312;
       font-family: 'Rubik',sans-serif;
       font-size: 22px;
+
+      @include respond(laptop)
     
     }

@@ -37,7 +37,7 @@
     -webkit-box-direction: normal !important;
         -ms-flex-direction: column !important;
             flex-direction: column !important;
-    margin-top: 3% !important;
+    padding-top: 0 !important;
   }
 }
 

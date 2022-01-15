@@ -5,14 +5,21 @@
   background: -webkit-gradient(linear, left top, right top, from(#2C5364), color-stop(#203A43), to(#0F2027));
   background: linear-gradient(to right, #2C5364, #203A43, #0F2027);
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  width: 330px;
-  height: 190px;
+  width: 31rem;
+  height: 19rem;
   border-radius: 8px;
   -webkit-box-shadow: 0 8px 0 0 rgba(0, 0, 0, 0.555);
           box-shadow: 0 8px 0 0 rgba(0, 0, 0, 0.555);
   position: relative;
-  right: 1.7%;
+  right: 1.9%;
   display: block;
+}
+
+@media only screen and (max-device-width: 990px) {
+  .player {
+    width: 20rem;
+    height: 12rem;
+  }
 }
 
 .record {
@@ -34,6 +41,13 @@
           justify-content: center;
 }
 
+@media only screen and (max-device-width: 990px) {
+  .record {
+    width: 85px !important;
+    height: 85px !important;
+  }
+}
+
 .record:before {
   content: "";
   position: absolute;
@@ -43,6 +57,13 @@
   border-top: 5px solid #2C2424;
   border-bottom: 5px solid #2C2424;
   border-radius: 50%;
+}
+
+@media only screen and (max-device-width: 990px) {
+  .record:before {
+    width: 40px !important;
+    height: 40px !important;
+  }
 }
 
 .record:after {
@@ -56,12 +77,27 @@
   border-radius: 50%;
 }
 
+@media only screen and (max-device-width: 990px) {
+  .record:after {
+    height: 40px !important;
+    width: 40px !important;
+  }
+}
+
 .label {
   background-color: #000000;
   height: 15px;
   width: 15px;
   border: 10px solid #2C2424;
   border-radius: 50%;
+}
+
+@media only screen and (max-device-width: 990px) {
+  .label {
+    width: 5px !important;
+    height: 5px !important;
+    border: 3px solid #2C2424;
+  }
 }
 
 .screw {
@@ -73,6 +109,16 @@
   position: absolute;
   top: -10px;
   left: -10px;
+}
+
+@media only screen and (max-device-width: 990px) {
+  .screw {
+    width: 10px !important;
+    height: 10px !important;
+    position: absolute !important;
+    top: -20px !important;
+    left: 10px !important;
+  }
 }
 
 .stick {
@@ -88,6 +134,12 @@
           transform-origin: top;
 }
 
+@media only screen and (max-device-width: 990px) {
+  .stick {
+    display: none;
+  }
+}
+
 .play {
   -webkit-transform: rotate(30deg);
           transform: rotate(30deg);
@@ -95,6 +147,12 @@
           transform-origin: top;
   -webkit-transition: 1s;
   transition: 1s;
+}
+
+@media only screen and (max-device-width: 990px) {
+  .play {
+    display: none;
+  }
 }
 
 .stick:before {
@@ -170,6 +228,14 @@
   position: absolute;
   left: 233px;
   top: 60px;
+}
+
+@media only screen and (max-device-width: 990px) {
+  .slider {
+    width: 50px !important;
+    left: 103px;
+    top: 30px;
+  }
 }
 
 .slider::-webkit-slider-thumb {

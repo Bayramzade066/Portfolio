@@ -44,12 +44,13 @@
     -webkit-box-direction: normal !important;
         -ms-flex-direction: column !important;
             flex-direction: column !important;
-    margin-top: 25% !important;
+    margin-top: 50% !important;
   }
 }
 
 @media only screen and (max-device-width: 990px) {
   .home .home-all {
+    margin-top: 70% !important;
     width: 100% !important;
   }
 }
@@ -213,7 +214,7 @@
   .home .home-all .home-info {
     width: 85.84vw  !important;
     padding-left: 10rem !important;
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
   }
 }
 
@@ -221,7 +222,8 @@
   .home .home-all .home-info {
     width: 70vw  !important;
     padding-left: 0 !important;
-    margin: 0 auto !important;
+    margin: 0 auto;
+    margin-bottom: 3rem;
   }
 }
 
@@ -239,6 +241,12 @@
   .home .home-all .home-info .info-name h3 {
     width: 55.84vw !important;
     font-size: 3.5rem !important;
+  }
+}
+
+@media only screen and (max-device-width: 760px) {
+  .home .home-all .home-info .info-name h3 {
+    font-size: 2.5rem !important;
   }
 }
 

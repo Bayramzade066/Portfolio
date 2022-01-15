@@ -19,7 +19,7 @@
         @include respond(desktop){
             margin: 0 auto !important;
             flex-direction: column !important;
-            margin-top: 3% !important;
+            padding-top: 0 !important;
           }
         @include respond(laptop){
             width: 100% !important;

@@ -26,9 +26,10 @@
       @include respond(desktop){
         margin: 0 auto !important;
         flex-direction: column !important;
-        margin-top: 25% !important;
+        margin-top: 50% !important;
       }
       @include respond(laptop){
+        margin-top: 70% !important;
         width: 100% !important;
     }
 
@@ -169,13 +170,14 @@
             @include respond(desktop){
               width:85.84vw  !important;
               padding-left: 10rem !important;
-              margin-bottom: 3rem;
+              margin-bottom: 2rem;
             }
 
             @include respond(laptop){
               width:70vw  !important;
               padding-left: 0 !important;
-              margin: 0 auto !important;
+              margin: 0 auto ;
+              margin-bottom: 3rem;
             }
             .info-name h3{
                 width: 100%;
@@ -189,6 +191,9 @@
                 @include respond(laptop){
                   width: 55.84vw !important;
                   font-size: 3.5rem !important;
+                }
+                @include respond(tablet){
+                  font-size: 2.5rem !important;
                 }
 
             }

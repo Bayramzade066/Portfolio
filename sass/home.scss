@@ -171,6 +171,7 @@
               width:85.84vw  !important;
               padding-left: 10rem !important;
               margin-bottom: 2rem;
+              margin-left: 1rem !important;
             }
 
             @include respond(laptop){
@@ -178,6 +179,7 @@
               padding-left: 0 !important;
               margin: 0 auto ;
               margin-bottom: 3rem;
+              margin-left: 1rem !important;
             }
             .info-name h3{
                 width: 100%;
@@ -187,6 +189,8 @@
                 font-weight: 800;
                 text-transform: uppercase;
                 margin-bottom: 2rem;
+                position: relative;
+
 
                 @include respond(laptop){
                   width: 55.84vw !important;
@@ -235,3 +239,50 @@
     
 }
 
+@keyframes animate {
+  0%,
+  10%,
+  100% {
+    width: 0;
+  }
+
+  70%,
+  90% {
+    width: 90%;
+  }
+}
+.box-content h3{
+  // width: 100%;
+  color: #FFFFFF;
+  font-size: 5rem;
+  letter-spacing: 2px;
+  font-weight: 800;
+  margin-bottom: 2rem;  
+  position: relative;
+  
+
+}
+.box-content h3::before{
+  top: 0;
+  left: 0;
+  // width: 0;
+  height: 100%;
+  color: #c55923;
+  overflow: hidden;
+  position: absolute;
+  content: attr(data-text);
+  border-right: 2px solid #c55923;
+  animation: animate 5s linear infinite;
+}
+.info-name h3::before{
+  top: 0;
+  left: 0;
+  // width: 0;
+  height: 100%;
+  color: #c55923;
+  overflow: hidden;
+  position: absolute;
+  content: attr(data-text);
+  border-right: 2px solid #c55923;
+  animation: animate 5s linear infinite;
+}

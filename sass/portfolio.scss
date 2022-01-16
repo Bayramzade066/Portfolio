@@ -82,7 +82,10 @@
             transition: .8s ease;
             box-shadow: 0 0 15px #252525;
             overflow: hidden;
-
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+            text-align: center;
             @include respond(laptop){
                 width: 70vw !important;
             }
@@ -91,10 +94,39 @@
                 transition: 0.8s ease;
                 // box-sizing: border-box;
             }
+            &:hover >.portfolio-hover{
+                opacity: 1;
+                animation: mymov 0.85s;
+                transition: 0.5s;
+            }
+            @keyframes mymov {
+                from {bottom: -100px;}
+                to {bottom: 0px;}   
+              }
+            .portfolio-hover{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 100%;
+                height: 5rem;
+                font-size: 1.5rem;
+                background-color: rgba(0, 0, 0, 0.527);
+                color: white;
+                opacity: 0;
+                transition: 0.5s;
+                letter-spacing: 0.5px;
+                position: relative;
+
+            }
         }
+        
+
 
         a{
-            padding-left: 3rem;
+            margin-left: 3rem;
+            width: 100%;
+            height: 41.5rem;
+            margin-bottom: 4rem;
 
             @include respond(desktop){
                 padding-left: 0 !important
@@ -104,3 +136,5 @@
 }
 
 }; 
+
+

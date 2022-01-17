@@ -222,7 +222,6 @@
 @media only screen and (max-device-width: 990px) {
   .home .home-all .home-info {
     width: 70vw  !important;
-    padding-left: 0 !important;
     margin: 0 auto;
     margin-bottom: 3rem;
     margin-left: 1rem !important;
@@ -260,6 +259,16 @@
   font-weight: 500;
   font-style: italic;
   margin-bottom: 2rem;
+}
+
+.home .home-all .home-info .info-text p {
+  width: 85%;
+}
+
+@media only screen and (max-device-width: 990px) {
+  .home .home-all .home-info .info-text p {
+    width: 100%;
+  }
 }
 
 .home .home-all .home-info .info-socials {

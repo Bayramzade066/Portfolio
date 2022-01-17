@@ -115,7 +115,7 @@
   color: #c55923;
 }
 
-.about .about-all .about-info .about-text1 p {
+.about .about-all .about-info .about-text1 .writeit {
   font-size: 1.5rem;
   line-height: 3rem;
   letter-spacing: .5px;
@@ -124,7 +124,7 @@
 }
 
 @media only screen and (max-device-width: 990px) {
-  .about .about-all .about-info .about-text1 p {
+  .about .about-all .about-info .about-text1 .writeit {
     width: 100% !important;
   }
 }
@@ -164,4 +164,29 @@
   font-size: 1.5rem;
   text-align: left;
   min-width: 9rem;
+}
+
+.after {
+  -webkit-animation-delay: 500ms;
+  animation-delay: 500ms;
+  -webkit-animation: blink 1.3s infinite;
+          animation: blink 1.3s infinite;
+}
+
+@-webkit-keyframes blink {
+  50% {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }

@@ -176,7 +176,6 @@
 
             @include respond(laptop){
               width:70vw  !important;
-              padding-left: 0 !important;
               margin: 0 auto ;
               margin-bottom: 3rem;
               margin-left: 1rem !important;
@@ -208,6 +207,12 @@
                 font-weight: 500;
                 font-style: italic;
                 margin-bottom: 2rem;
+                p{
+                  width: 85%;
+                  @include respond(laptop){
+                    width: 100%;
+                  }
+                }
             }
             .info-socials {
                 display: flex;

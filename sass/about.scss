@@ -53,6 +53,7 @@
                 width: 84.84vw !important;
                 // margin-left: 15% !important;
             }
+            
 
             .about-text1{
                 // margin-right: 12rem;
@@ -71,12 +72,12 @@
                         color: #c55923;
                     }
                 }
-                p{
+                .writeit{
                     font-size: 1.5rem;
                     line-height: 3rem;
                     letter-spacing: .5px;
                     font-weight: 400;
-                    color:#bbbbbb;
+                    color:#bbbbbb;  
 
                     @include respond(laptop){
                         width: 100% !important;
@@ -118,3 +119,15 @@
     }
     }
 }}
+
+.after {
+    -webkit-animation-delay: 500ms; -moz-animation-delay: 500ms; -ms-animation-delay: 500ms; -o-animation-delay: 500ms; animation-delay: 500ms;
+      animation: blink 1.3s infinite;
+    }
+    
+    @keyframes blink {
+      50% { opacity: 0; }
+      to { opacity: 1;}
+    }
+    
+    

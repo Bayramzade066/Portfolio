@@ -223,7 +223,6 @@
 @media only screen and (max-device-width: 990px) {
   .home .home-all .home-info {
     width: 70vw  !important;
-    padding-left: 0 !important;
     margin: 0 auto;
     margin-bottom: 3rem;
     margin-left: 1rem !important;
@@ -261,6 +260,16 @@
   font-weight: 500;
   font-style: italic;
   margin-bottom: 2rem;
+}
+
+.home .home-all .home-info .info-text p {
+  width: 85%;
+}
+
+@media only screen and (max-device-width: 990px) {
+  .home .home-all .home-info .info-text p {
+    width: 100%;
+  }
 }
 
 .home .home-all .home-info .info-socials {
@@ -474,7 +483,7 @@
   color: #c55923;
 }
 
-.about .about-all .about-info .about-text1 p {
+.about .about-all .about-info .about-text1 .writeit {
   font-size: 1.5rem;
   line-height: 3rem;
   letter-spacing: .5px;
@@ -483,7 +492,7 @@
 }
 
 @media only screen and (max-device-width: 990px) {
-  .about .about-all .about-info .about-text1 p {
+  .about .about-all .about-info .about-text1 .writeit {
     width: 100% !important;
   }
 }
@@ -523,6 +532,31 @@
   font-size: 1.5rem;
   text-align: left;
   min-width: 9rem;
+}
+
+.after {
+  -webkit-animation-delay: 500ms;
+  animation-delay: 500ms;
+  -webkit-animation: blink 1.3s infinite;
+          animation: blink 1.3s infinite;
+}
+
+@-webkit-keyframes blink {
+  50% {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 .portfolio {
